@@ -10,6 +10,7 @@ public class CorsConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
             .allowedOrigins(
+                "https://complainthub-backend-production.up.railway.app",
                 "http://localhost:5173",
                 "https://complainthub-frontend-v34n.vercel.app"
             )
